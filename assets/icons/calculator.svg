@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect x="6" y="6" width="52" height="52" rx="8" fill="#7b2fff" opacity="0.2"/>
+  <rect x="6" y="6" width="52" height="52" rx="8" fill="none" stroke="#7b2fff" stroke-width="2.5"/>
+  <!-- Display -->
+  <rect x="10" y="10" width="44" height="14" rx="3" fill="rgba(0,0,0,0.4)" stroke="#7b2fff" stroke-width="1"/>
+  <text x="48" y="21" font-family="monospace" font-size="10" fill="#fff" text-anchor="end">42</text>
+  <!-- Buttons grid -->
+  <rect x="10" y="28" width="12" height="10" rx="2" fill="#7b2fff" opacity="0.6"/>
+  <rect x="26" y="28" width="12" height="10" rx="2" fill="#7b2fff" opacity="0.6"/>
+  <rect x="42" y="28" width="12" height="10" rx="2" fill="#a855f7" opacity="0.8"/>
+  <rect x="10" y="42" width="12" height="10" rx="2" fill="#7b2fff" opacity="0.6"/>
+  <rect x="26" y="42" width="12" height="10" rx="2" fill="#7b2fff" opacity="0.6"/>
+  <rect x="42" y="42" width="12" height="10" rx="2" fill="#ff5000" opacity="0.8"/>
+</svg>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nightmare Desktop OS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Desktop -->
+  <div id="desktop">
+
+    <!-- Desktop Icons -->
+    <div class="desktop-icons" id="desktopIcons">
+      <div class="desktop-icon" data-app="firefox" tabindex="0" role="button" aria-label="Mozilla Firefox">
+        <img src="assets/icons/firefox.svg" alt="" />
+        <span>Firefox</span>
+      </div>
+      <div class="desktop-icon" data-app="filemanager" tabindex="0" role="button" aria-label="File Manager">
+        <img src="assets/icons/filemanager.svg" alt="" />
+        <span>Files</span>
+      </div>
+      <div class="desktop-icon" data-app="texteditor" tabindex="0" role="button" aria-label="Text Editor">
+        <img src="assets/icons/texteditor.svg" alt="" />
+        <span>Text Editor</span>
+      </div>
+      <div class="desktop-icon" data-app="terminal" tabindex="0" role="button" aria-label="Terminal">
+        <img src="assets/icons/terminal.svg" alt="" />
+        <span>Terminal</span>
+      </div>
+      <div class="desktop-icon" data-app="settings" tabindex="0" role="button" aria-label="Settings">
+        <img src="assets/icons/settings.svg" alt="" />
+        <span>Settings</span>
+      </div>
+      <div class="desktop-icon" data-app="calculator" tabindex="0" role="button" aria-label="Calculator">
+        <img src="assets/icons/calculator.svg" alt="" />
+        <span>Calculator</span>
+      </div>
+    </div>
+
+    <!-- Window container -->
+    <div id="windowContainer"></div>
+
+    <!-- Context Menu -->
+    <div id="contextMenu" class="context-menu hidden">
+      <ul>
+        <li data-action="refresh">Refresh Desktop</li>
+        <li data-action="settings">Settings</li>
+        <li data-action="newfile">New File</li>
+      </ul>
+    </div>
+
+    <!-- Taskbar -->
+    <div id="taskbar">
+      <button id="startBtn" aria-label="Start Menu" aria-expanded="false">
+        <span class="start-icon">⊞</span>
+        <span>Start</span>
+      </button>
+
+      <div id="taskbarApps"></div>
+
+      <div id="taskbarTray">
+        <span id="clock"></span>
+      </div>
+    </div>
+
+    <!-- Start Menu -->
+    <div id="startMenu" class="hidden" role="menu" aria-label="Start Menu">
+      <div class="start-menu-header">
+        <span>Nightmare Desktop OS</span>
+      </div>
+      <ul class="start-menu-list">
+        <li data-app="firefox" role="menuitem" tabindex="0">
+          <img src="assets/icons/firefox.svg" alt="" /> Mozilla Firefox
+        </li>
+        <li data-app="filemanager" role="menuitem" tabindex="0">
+          <img src="assets/icons/filemanager.svg" alt="" /> File Manager
+        </li>
+        <li data-app="texteditor" role="menuitem" tabindex="0">
+          <img src="assets/icons/texteditor.svg" alt="" /> Text Editor
+        </li>
+        <li data-app="terminal" role="menuitem" tabindex="0">
+          <img src="assets/icons/terminal.svg" alt="" /> Terminal
+        </li>
+        <li data-app="calculator" role="menuitem" tabindex="0">
+          <img src="assets/icons/calculator.svg" alt="" /> Calculator
+        </li>
+        <li data-app="settings" role="menuitem" tabindex="0">
+          <img src="assets/icons/settings.svg" alt="" /> Settings
+        </li>
+      </ul>
+      <div class="start-menu-footer">
+        <button id="shutdownBtn">⏻ Shut Down</button>
+      </div>
+    </div>
+
+  </div><!-- /desktop -->
+
+  <!-- Shutdown Overlay -->
+  <div id="shutdownOverlay" class="hidden">
+    <div class="shutdown-box">
+      <p>Shutting down Nightmare Desktop OS…</p>
+      <div class="shutdown-spinner"></div>
+    </div>
+  </div>
+
+  <script src="desktop.js"></script>
+</body>
+</html>
