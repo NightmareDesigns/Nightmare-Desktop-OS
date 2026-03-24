@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect x="6" y="8" width="52" height="48" rx="5" fill="#0c0c0c" stroke="#00e676" stroke-width="2"/>
+  <!-- Prompt line -->
+  <text x="12" y="28" font-family="monospace" font-size="11" fill="#a855f7">user@nightmare:~$</text>
+  <text x="12" y="41" font-family="monospace" font-size="10" fill="#00e676">_</text>
+  <!-- Top bar -->
+  <circle cx="18" cy="17" r="3.5" fill="#e05050"/>
+  <circle cx="29" cy="17" r="3.5" fill="#f0c040"/>
+  <circle cx="40" cy="17" r="3.5" fill="#40c070"/>
+</svg>
